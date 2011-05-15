@@ -2,3 +2,4 @@ source 'http://rubygems.org'
 
 gem 'copy', '0.0.1'
 gem 'mongo'
+gem 'bson_ext'
