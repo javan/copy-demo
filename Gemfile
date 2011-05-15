@@ -1,3 +1,3 @@
 source 'http://rubygems.org'
 
-gem 'copy', :git => 'git://github.com/javan/copy.git'
+gem 'copy', '0.0.1'

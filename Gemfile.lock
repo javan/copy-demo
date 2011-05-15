@@ -1,14 +1,9 @@
-GIT
-  remote: git://github.com/javan/copy.git
-  revision: 7b10aef3dbd078857fbf90282556abd6e5eee991
+GEM
+  remote: http://rubygems.org/
   specs:
     copy (0.0.1)
       redcarpet
       sinatra (~> 1.2.6)
-
-GEM
-  remote: http://rubygems.org/
-  specs:
     rack (1.2.2)
     redcarpet (1.13.2)
     sinatra (1.2.6)
@@ -20,4 +15,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  copy!
+  copy (= 0.0.1)
