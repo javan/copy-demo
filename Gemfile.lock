@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:javan/copy.git
+  remote: git://github.com/javan/copy.git
   revision: 7b10aef3dbd078857fbf90282556abd6e5eee991
   specs:
     copy (0.0.1)
@@ -7,9 +7,10 @@ GIT
       sinatra (~> 1.2.6)
 
 GEM
+  remote: http://rubygems.org/
   specs:
     rack (1.2.2)
-    redcarpet (1.13.1)
+    redcarpet (1.13.2)
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
