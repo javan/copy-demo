@@ -1,0 +1,1 @@
+gem 'copy', :git => 'git@github.com:javan/copy.git'
