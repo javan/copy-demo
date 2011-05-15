@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'copy'
 
 Copy::Server.config do
