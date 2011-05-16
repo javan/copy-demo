@@ -1,11 +1,12 @@
 <p class="bookmarklet">Click &rarr; <a href="javascript:void((function(){var%20cjs=document.createElement('script');cjs.setAttribute('src','/_copy.js?'+new%20Date().getTime());cjs.setAttribute('type','text/javascript');document.getElementsByTagName('head')[0].appendChild(cjs);})());">Edit Copy</a> to edit the copy on this page.</p>
 
-<% copy :editme do %>
-  You can set default text like this.
-  
-  Markdown is _easy_ to use.
-<% end %>
+<pre>
+  Username: copy
+  Password: copy
+</pre>
 
-<% copy :editme_also do %>
-  Maybe **you** should edit me.
+<h1><% copy :headline do %>I'm a headline, edit me.<% end %></h1>
+
+<% copy :some_content do %>
+  I'm some great content, _please_ edit me!
 <% end %>
