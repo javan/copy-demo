@@ -1,12 +1,25 @@
-<p class="bookmarklet">Click &rarr; <a href="javascript:void((function(){var%20cjs=document.createElement('script');cjs.setAttribute('src','/_copy.js?'+new%20Date().getTime());cjs.setAttribute('type','text/javascript');document.getElementsByTagName('head')[0].appendChild(cjs);})());">Edit Copy</a> to edit the copy on this page.</p>
+  <a href="http://github.com/javan/copy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a> 
 
-<pre>
-  Username: copy
-  Password: copy
-</pre>
+<%= partial 'shared/bookmark' %>
 
-<h1><% copy :headline do %>I'm a headline, edit me.<% end %></h1>
+<div id="columns">
+  <h1><% copy :love do %>I love Copy<% end %></h1>
+  
+  <div class="column">
+    <% copy :article1 do %>
+      This is where _Article 1_ will go.
+    <% end %>
+  </div>
 
-<% copy :some_content do %>
-  I'm some great content, _please_ edit me!
-<% end %>
+  <div class="column">
+    <% copy :article2 do %>
+      This is where _Article_ 2 will go.
+    <% end %>
+  </div>
+
+  <div class="column">
+    <% copy :article3 do %>
+      This is where _Article 3_ will go.
+    <% end %>
+  </div>
+</div>

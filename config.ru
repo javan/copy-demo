@@ -1,9 +1,6 @@
-begin
-  require 'copy'
-rescue LoadError
-  require 'rubygems'
-  require 'copy'
-end
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 
 Copy::Server.config do
   # Sets a Cache-Control header for the duration specified.
@@ -18,6 +15,14 @@ Copy::Server.config do
   #
   set :copy_username, ENV['COPY_USERNAME']
   set :copy_password, ENV['COPY_PASSWORD']
+  
+  # Enter the URL to your data store.
+  # Be sure to uncomment the correlating gems in your Gemfile.
+  # "redis://", "mongodb://", "mysql://", "postgres://", and "sqlite://" are supported.
+  # Heroku friendly: http://devcenter.heroku.com/articles/mongohq
+  #
+  # set :storage, ENV['MONGOHQ_URL']
+
   
   # Enter the URL to your data store.
   # "redis://", "mongodb://", "mysql://", "postgres://", and "sqlite://" are supported.
