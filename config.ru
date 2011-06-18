@@ -2,6 +2,19 @@ require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 
+# For local development with mongodb.
+if ENV['RACK_ENV'] != 'production'
+  ENV['COPY_USERNAME'] ||= 'copy'
+  ENV['COPY_PASSWORD'] ||= 'copy'
+  # $ mongo
+  # MongoDB shell version: 1.8.1
+  # connecting to: test
+  # > use copy-demo
+  # switched to db copy-demo
+  # > db.addUser("copy", "copy")
+  ENV['MONGOHQ_URL'] ||= 'mongodb://copy:copy@localhost/copy-demo'
+end
+
 Copy::Server.config do
   # Sets a Cache-Control header for the duration specified.
   # Heroku friendly: http://devcenter.heroku.com/articles/http-caching
