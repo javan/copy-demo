@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'copy'
+gem 'copy', '0.1.6'
 
 # Using mongodb for storage? Uncomment these:
 #
